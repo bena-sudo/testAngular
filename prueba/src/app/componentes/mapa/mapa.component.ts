@@ -10,6 +10,16 @@ export class MapaComponent implements OnInit {
 
   private map!: L.Map;
 
+  private costeraCoords: L.LatLngTuple[] = [
+    [38.89, -0.92],
+    [38.92, -0.72],
+    [39.02, -0.63],
+    [39.02, -0.63],
+    [38.98, -0.40],
+    [38.87, -0.64],
+    [38.77, -0.88],
+  ];
+
   ubicaciones = [
     {
       nombre: 'Montesa',
@@ -160,10 +170,11 @@ export class MapaComponent implements OnInit {
   ngOnInit(): void {
     this.initMap();
     this.addMarkers();
+    this.resaltarCostera();
   }
 
   private initMap(): void {
-    this.map = L.map('map').setView([38.95, -0.70], 12); // Centrado inicial
+    this.map = L.map('map').setView([38.925, -0.6719], 12);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap contributors'
@@ -176,5 +187,15 @@ export class MapaComponent implements OnInit {
         .addTo(this.map)
         .bindPopup(`<b>${ubi.nombre}</b><br>${ubi.descripcion}`);
     });
+  }
+
+  private resaltarCostera(): void {
+    const poligono = L.polygon(this.costeraCoords, {
+      color: 'red',
+      fillColor: 'orange', 
+      fillOpacity: 0.1
+    }).addTo(this.map);
+
+    this.map.fitBounds(poligono.getBounds());
   }
 }
