@@ -1,0 +1,279 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4 text-white">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-2xl font-bold">CRM Clone</div>
+        <div class="space-x-4">
+          <a href="#" class="hover:underline">Dashboard</a>
+          <a href="#" class="hover:underline">Customers</a>
+          <a href="#" class="hover:underline">Reports</a>
+          <a href="#" class="hover:underline">Settings</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="flex">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white shadow-md h-screen p-4">
+        <div class="space-y-4">
+          <a
+            href="#"
+            class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded"
+          >
+            <i class="fas fa-tachometer-alt mr-2"></i> Dashboard
+          </a>
+          <a
+            href="#"
+            class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded"
+          >
+            <i class="fas fa-users mr-2"></i> Customers
+          </a>
+          <a
+            href="#"
+            class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded"
+          >
+            <i class="fas fa-chart-line mr-2"></i> Reports
+          </a>
+          <a
+            href="#"
+            class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded"
+          >
+            <i class="fas fa-cogs mr-2"></i> Settings
+          </a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-6">
+        <h1 class="text-3xl font-bold mb-6">Customers</h1>
+        <div class="bg-white shadow-md rounded-lg p-4">
+          <table class="min-w-full bg-white">
+            <thead>
+              <tr>
+                <th class="py-2 px-4 border-b">Name</th>
+                <th class="py-2 px-4 border-b">Email</th>
+                <th class="py-2 px-4 border-b">Phone</th>
+                <th class="py-2 px-4 border-b">Company</th>
+                <th class="py-2 px-4 border-b">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-2 px-4 border-b">John Doe</td>
+                <td class="py-2 px-4 border-b">john@example.com</td>
+                <td class="py-2 px-4 border-b">(555) 555-5555</td>
+                <td class="py-2 px-4 border-b">Example Inc.</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">Jane Smith</td>
+                <td class="py-2 px-4 border-b">jane@example.com</td>
+                <td class="py-2 px-4 border-b">(555) 555-5555</td>
+                <td class="py-2 px-4 border-b">Example Inc.</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">Alice Johnson</td>
+                <td class="py-2 px-4 border-b">alice@example.com</td>
+                <td class="py-2 px-4 border-b">(555) 555-5555</td>
+                <td class="py-2 px-4 border-b">Example Inc.</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">Bob Brown</td>
+                <td class="py-2 px-4 border-b">bob@example.com</td>
+                <td class="py-2 px-4 border-b">(555) 555-5555</td>
+                <td class="py-2 px-4 border-b">Example Inc.</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">Charlie Davis</td>
+                <td class="py-2 px-4 border-b">charlie@example.com</td>
+                <td class="py-2 px-4 border-b">(555) 555-5555</td>
+                <td class="py-2 px-4 border-b">Example Inc.</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">David Evans</td>
+                <td class="py-2 px-4 border-b">david@example.com</td>
+                <td class="py-2 px-4 border-b">(555) 555-5555</td>
+                <td class="py-2 px-4 border-b">Example Inc.</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">Eve Foster</td>
+                <td class="py-2 px-4 border-b">eve@example.com</td>
+                <td class="py-2 px-4 border-b">(555) 555-5555</td>
+                <td class="py-2 px-4 border-b">Example Inc.</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">Frank Green</td>
+                <td class="py-2 px-4 border-b">frank@example.com</td>
+                <td class="py-2 px-4 border-b">(555) 555-5555</td>
+                <td class="py-2 px-4 border-b">Example Inc.</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">Grace Harris</td>
+                <td class="py-2 px-4 border-b">grace@example.com</td>
+                <td class="py-2 px-4 border-b">(555) 555-5555</td>
+                <td class="py-2 px-4 border-b">Example Inc.</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">Hank Irving</td>
+                <td class="py-2 px-4 border-b">hank@example.com</td>
+                <td class="py-2 px-4 border-b">(555) 555-5555</td>
+                <td class="py-2 px-4 border-b">Example Inc.</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">Ivy Johnson</td>
+                <td class="py-2 px-4 border-b">ivy@example.com</td>
+                <td class="py-2 px-4 border-b">(555) 555-5555</td>
+                <td class="py-2 px-4 border-b">Example Inc.</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">Jack King</td>
+                <td class="py-2 px-4 border-b">jack@example.com</td>
+                <td class="py-2 px-4 border-b">(555) 555-5555</td>
+                <td class="py-2 px-4 border-b">Example Inc.</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">Karen Lee</td>
+                <td class="py-2 px-4 border-b">karen@example.com</td>
+                <td class="py-2 px-4 border-b">(555) 555-5555</td>
+                <td class="py-2 px-4 border-b">Example Inc.</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">Leo Martin</td>
+                <td class="py-2 px-4 border-b">leo@example.com</td>
+                <td class="py-2 px-4 border-b">(555) 555-5555</td>
+                <td class="py-2 px-4 border-b">Example Inc.</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">Mona Nelson</td>
+                <td class="py-2 px-4 border-b">mona@example.com</td>
+                <td class="py-2 px-4 border-b">(555) 555-5555</td>
+                <td class="py-2 px-4 border-b">Example Inc.</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">Nina Owens</td>
+                <td class="py-2 px-4 border-b">nina@example.com</td>
+                <td class="py-2 px-4 border-b">(555) 555-5555</td>
+                <td class="py-2 px-4 border-b">Example Inc.</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

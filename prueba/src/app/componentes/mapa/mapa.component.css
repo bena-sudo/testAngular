@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #1e3a8a;
+    padding: 16px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 16px;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+.container {
+    display: flex;
+}
+.sidebar {
+    width: 250px;
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+}
+.sidebar a {
+    display: block;
+    padding: 8px;
+    color: #4b5563;
+    text-decoration: none;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+.sidebar a:hover {
+    background-color: #e5e7eb;
+}
+.main-content {
+    flex: 1;
+    padding: 24px;
+}
+.main-content h1 {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.map {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.search-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+.town-list {
+    list-style: none;
+    padding: 0;
+}
+.town-item {
+    background-color: #f9fafb;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+}
+.town-item h2 {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+}

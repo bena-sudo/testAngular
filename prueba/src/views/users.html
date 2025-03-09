@@ -1,0 +1,258 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM Clone - Manage Users</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4 text-white">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-2xl font-bold">CRM Clone</div>
+        <div class="space-x-4">
+          <a href="#" class="hover:underline">Dashboard</a>
+          <a href="#" class="hover:underline">Customers</a>
+          <a href="#" class="hover:underline">Reports</a>
+          <a href="#" class="hover:underline">Settings</a>
+          <a href="#" class="hover:underline">Manage Users</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="flex">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white shadow-md h-screen p-4">
+        <div class="space-y-4">
+          <a
+            href="#"
+            class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded"
+          >
+            <i class="fas fa-tachometer-alt mr-2"></i> Dashboard
+          </a>
+          <a
+            href="#"
+            class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded"
+          >
+            <i class="fas fa-users mr-2"></i> Customers
+          </a>
+          <a
+            href="#"
+            class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded"
+          >
+            <i class="fas fa-chart-line mr-2"></i> Reports
+          </a>
+          <a
+            href="#"
+            class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded"
+          >
+            <i class="fas fa-cogs mr-2"></i> Settings
+          </a>
+          <a
+            href="#"
+            class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded"
+          >
+            <i class="fas fa-user-cog mr-2"></i> Manage Users
+          </a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-6">
+        <h1 class="text-3xl font-bold mb-6">Manage Users</h1>
+        <div class="bg-white shadow-md rounded-lg p-4">
+          <table class="min-w-full bg-white">
+            <thead>
+              <tr>
+                <th class="py-2 px-4 border-b">Username</th>
+                <th class="py-2 px-4 border-b">Email</th>
+                <th class="py-2 px-4 border-b">Role</th>
+                <th class="py-2 px-4 border-b">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-2 px-4 border-b">admin</td>
+                <td class="py-2 px-4 border-b">admin@example.com</td>
+                <td class="py-2 px-4 border-b">Administrator</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">jdoe</td>
+                <td class="py-2 px-4 border-b">jdoe@example.com</td>
+                <td class="py-2 px-4 border-b">User</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">asmith</td>
+                <td class="py-2 px-4 border-b">asmith@example.com</td>
+                <td class="py-2 px-4 border-b">User</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">bwhite</td>
+                <td class="py-2 px-4 border-b">bwhite@example.com</td>
+                <td class="py-2 px-4 border-b">User</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">cgreen</td>
+                <td class="py-2 px-4 border-b">cgreen@example.com</td>
+                <td class="py-2 px-4 border-b">User</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">dblack</td>
+                <td class="py-2 px-4 border-b">dblack@example.com</td>
+                <td class="py-2 px-4 border-b">User</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">ewhite</td>
+                <td class="py-2 px-4 border-b">ewhite@example.com</td>
+                <td class="py-2 px-4 border-b">User</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">fblue</td>
+                <td class="py-2 px-4 border-b">fblue@example.com</td>
+                <td class="py-2 px-4 border-b">User</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">ggray</td>
+                <td class="py-2 px-4 border-b">ggray@example.com</td>
+                <td class="py-2 px-4 border-b">User</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">hred</td>
+                <td class="py-2 px-4 border-b">hred@example.com</td>
+                <td class="py-2 px-4 border-b">User</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">iblack</td>
+                <td class="py-2 px-4 border-b">iblack@example.com</td>
+                <td class="py-2 px-4 border-b">User</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">jwhite</td>
+                <td class="py-2 px-4 border-b">jwhite@example.com</td>
+                <td class="py-2 px-4 border-b">User</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">kblue</td>
+                <td class="py-2 px-4 border-b">kblue@example.com</td>
+                <td class="py-2 px-4 border-b">User</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">lgray</td>
+                <td class="py-2 px-4 border-b">lgray@example.com</td>
+                <td class="py-2 px-4 border-b">User</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="py-2 px-4 border-b">mred</td>
+                <td class="py-2 px-4 border-b">mred@example.com</td>
+                <td class="py-2 px-4 border-b">User</td>
+                <td class="py-2 px-4 border-b">
+                  <a href="#" class="text-blue-600 hover:underline">Edit</a>
+                  <a href="#" class="text-red-600 hover:underline ml-2"
+                    >Delete</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
