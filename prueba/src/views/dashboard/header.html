@@ -1,0 +1,115 @@
+<div class="wrapper">
+  <nav class="navbar">
+    <a class="sidebar-toggle">
+      <span class="hamburger">Menu</span>
+    </a>
+    <form class="search-form">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search projects..."
+      />
+    </form>
+    <ul class="navbar-menu">
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link">📩</a>
+        <div class="dropdown-menu">
+          <p>4 New Messages</p>
+          <a href="#">Michelle Bilodeau - 5m ago</a>
+          <a href="#">Kathie Burton - 30m ago</a>
+          <a href="#">Alexander Groves - 2h ago</a>
+          <a href="#">Daisy Seger - 5h ago</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link">🔔</a>
+        <div class="dropdown-menu">
+          <p>4 New Notifications</p>
+          <a href="#">Update completed - 2h ago</a>
+          <a href="#">Lorem ipsum - 6h ago</a>
+          <a href="#">Login from 192.186.1.1 - 8h ago</a>
+          <a href="#">New connection - 12h ago</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link">⚙️</a>
+        <div class="dropdown-menu">
+          <a href="#">View Profile</a>
+          <a href="#">Contacts</a>
+          <a href="#">Analytics</a>
+          <a href="#">Settings</a>
+          <a href="#">Sign out</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<style>
+  .wrapper {
+    position: relative;
+  }
+  .wrapper:before {
+    background: #153d77;
+    content: " ";
+    height: 264px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #153d77;
+    padding: 10px 20px;
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+  .search-form {
+    flex-grow: 1;
+    margin: 0 20px;
+  }
+  .search-input {
+    width: 100%;
+    padding: 5px;
+  }
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-item {
+    position: relative;
+    margin-left: 20px;
+  }
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    color: black;
+    padding: 10px;
+    top: 30px;
+    right: 0;
+    min-width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+  }
+</style>

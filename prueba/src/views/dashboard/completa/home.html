@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <nav id="sidebar" class="sidebar">
+        <a class="sidebar-brand" href="#">
+          <span>🔥 Spark</span>
+        </a>
+      
+        <div class="sidebar-user">
+          <img src="img/avatars/avatar.jpg" alt="Linda Miller" />
+          <div class="user-info">
+            <div class="fw-bold">Linda Miller</div>
+            <small>Front-end Developer</small>
+          </div>
+        </div>
+      
+        <ul class="sidebar-nav">
+          <li class="sidebar-header">Main</li>
+          <li class="sidebar-item">
+            <a class="sidebar-link">🏠 Dashboards</a>
+            <ul class="sidebar-dropdown">
+              <li><a href="#">Default</a></li>
+              <li><a href="#">Analytics</a></li>
+              <li><a href="#">E-commerce</a></li>
+            </ul>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link">📄 Pages</a>
+            <ul class="sidebar-dropdown">
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Clients</a></li>
+              <li><a href="#">Invoice</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    <div class="wrapper">
+        <nav class="navbar">
+          <a class="sidebar-toggle">
+            <span class="hamburger">Menu</span>
+          </a>
+          <form class="search-form">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search projects..."
+            />
+          </form>
+          <ul class="navbar-menu">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link">📩</a>
+              <div class="dropdown-menu">
+                <p>4 New Messages</p>
+                <a href="#">Michelle Bilodeau - 5m ago</a>
+                <a href="#">Kathie Burton - 30m ago</a>
+                <a href="#">Alexander Groves - 2h ago</a>
+                <a href="#">Daisy Seger - 5h ago</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link">🔔</a>
+              <div class="dropdown-menu">
+                <p>4 New Notifications</p>
+                <a href="#">Update completed - 2h ago</a>
+                <a href="#">Lorem ipsum - 6h ago</a>
+                <a href="#">Login from 192.186.1.1 - 8h ago</a>
+                <a href="#">New connection - 12h ago</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link">⚙️</a>
+              <div class="dropdown-menu">
+                <a href="#">View Profile</a>
+                <a href="#">Contacts</a>
+                <a href="#">Analytics</a>
+                <a href="#">Settings</a>
+                <a href="#">Sign out</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="header">
+            <h1 class="header-title">Welcome back, Linda!</h1>
+            <p class="header-subtitle">
+              You have 24 new messages and 5 new notifications.
+            </p>
+          </div>
+        <div class="card">
+          <div class="card-header">
+            <h5 class="card-title">Latest Projects</h5>
+            <div class="card-actions">
+              <a href="#" class="icon-link">🔄</a>
+              <div class="dropdown">
+                <a href="#" class="dropdown-toggle">⋮</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="world-map">Mapa aquí (Placeholder)</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h5 class="card-title">Latest Projects</h5>
+            <div class="card-actions">
+              <a href="#" class="icon-link">🔄</a>
+              <div class="dropdown">
+                <a href="#" class="dropdown-toggle">⋮</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <table class="project-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
+                  <th>Status</th>
+                  <th>Assignee</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Project Apollo</td>
+                  <td>01/01/2023</td>
+                  <td>31/06/2023</td>
+                  <td><span class="badge success">Done</span></td>
+                  <td>Carl Jenkins</td>
+                </tr>
+                <tr>
+                  <td>Project Fireball</td>
+                  <td>01/01/2023</td>
+                  <td>31/06/2023</td>
+                  <td><span class="badge danger">Cancelled</span></td>
+                  <td>Bertha Martin</td>
+                </tr>
+                <tr>
+                  <td>Project Hades</td>
+                  <td>01/01/2023</td>
+                  <td>31/06/2023</td>
+                  <td><span class="badge success">Done</span></td>
+                  <td>Stacie Hall</td>
+                </tr>
+                <tr>
+                  <td>Project Nitro</td>
+                  <td>01/01/2023</td>
+                  <td>31/06/2023</td>
+                  <td><span class="badge warning">In Progress</span></td>
+                  <td>Carl Jenkins</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

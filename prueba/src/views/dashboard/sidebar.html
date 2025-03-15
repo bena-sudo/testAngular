@@ -1,0 +1,114 @@
+<nav id="sidebar" class="sidebar">
+  <a class="sidebar-brand" href="#">
+    <span>🔥 Spark</span>
+  </a>
+
+  <div class="sidebar-user">
+    <img src="img/avatars/avatar.jpg" alt="Linda Miller" />
+    <div class="user-info">
+      <div class="fw-bold">Linda Miller</div>
+      <small>Front-end Developer</small>
+    </div>
+  </div>
+
+  <ul class="sidebar-nav">
+    <li class="sidebar-header">Main</li>
+    <li class="sidebar-item">
+      <a class="sidebar-link">🏠 Dashboards</a>
+      <ul class="sidebar-dropdown">
+        <li><a href="#">Default</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">E-commerce</a></li>
+      </ul>
+    </li>
+    <li class="sidebar-item">
+      <a class="sidebar-link">📄 Pages</a>
+      <ul class="sidebar-dropdown">
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Invoice</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<style>
+
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+
+  .sidebar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+
+  .sidebar-user {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .sidebar-user img {
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .sidebar-nav {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar-header {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+
+  .sidebar-item {
+    margin-bottom: 10px;
+  }
+
+  .sidebar-link {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .sidebar-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .sidebar-dropdown {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+  }
+
+  .sidebar-dropdown.show {
+    display: block;
+  }
+
+  .sidebar-dropdown li a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+  }
+
+  .sidebar-dropdown li a:hover {
+    text-decoration: underline;
+  }
+</style>
