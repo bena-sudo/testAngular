@@ -1,0 +1,18 @@
+<aside
+  [ngClass]="{
+    'w-64': isSidebarOpen,
+    'w-0': !isSidebarOpen
+  }"
+  class="bg-gray-800 text-white transition-all duration-300 overflow-hidden h-screen"
+>
+  <div class="p-4">
+    <h2 class="text-lg font-bold">Menu</h2>
+    <ul class="mt-4 space-y-2">
+      <li><a href="#" class="block p-2 hover:bg-gray-700">Inicio</a></li>
+      <li><a href="#" class="block p-2 hover:bg-gray-700">Perfil</a></li>
+      <li>
+        <a href="#" class="block p-2 hover:bg-gray-700">Configuración</a>
+      </li>
+    </ul>
+  </div>
+</aside>

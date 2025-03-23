@@ -1,0 +1,4 @@
+/* Agrega una transición suave */
+aside {
+  transition: width 0.3s ease-in-out;
+}
