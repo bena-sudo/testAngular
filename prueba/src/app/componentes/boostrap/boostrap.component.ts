@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-boostrap',
   imports: [],
   templateUrl: './boostrap.component.html',
-  styleUrl: './boostrap.component.css'
+  styleUrl: './boostrap.component.css',
 })
-export class BoostrapComponent {
-
-}
+export class BoostrapComponent {}

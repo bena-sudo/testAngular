@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IdomasComponent } from './idomas.component';
+import { TableComponent } from './table.component';
 
-describe('IdomasComponent', () => {
-  let component: IdomasComponent;
-  let fixture: ComponentFixture<IdomasComponent>;
+describe('TableComponent', () => {
+  let component: TableComponent;
+  let fixture: ComponentFixture<TableComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [IdomasComponent]
-    })
-    .compileComponents();
+      imports: [TableComponent],
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(IdomasComponent);
+    fixture = TestBed.createComponent(TableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

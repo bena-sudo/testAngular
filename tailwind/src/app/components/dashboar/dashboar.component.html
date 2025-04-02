@@ -1,40 +1,78 @@
-<div class="bg-white shadow-lg rounded-lg flex-grow w-full">
-    <!-- Header -->
-    <div class="px-4 py-3 border-b flex justify-between items-center">
-      <h5 class="text-lg font-semibold">Current Visitors</h5>
-      <div class="flex items-center space-x-2">
-        <a href="#" class="text-gray-500 hover:text-gray-700">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-refresh-cw">
-            <polyline points="23 4 23 10 17 10"></polyline>
-            <polyline points="1 20 1 14 7 14"></polyline>
-            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+<div class="my-3 bg-white shadow-lg rounded-lg flex-grow w-full">
+  <!-- Header -->
+  <div class="px-4 py-3 border-b flex justify-between items-center">
+    <h5 class="text-lg font-semibold">Current Visitors</h5>
+    <div class="flex items-center space-x-2">
+      <a href="#" class="text-gray-500 hover:text-gray-700">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-refresh-cw"
+        >
+          <polyline points="23 4 23 10 17 10"></polyline>
+          <polyline points="1 20 1 14 7 14"></polyline>
+          <path
+            d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
+          ></path>
+        </svg>
+      </a>
+
+      <!-- Dropdown -->
+      <div class="relative">
+        <button
+          id="dropdownButton"
+          class="text-gray-500 hover:text-gray-700 focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-more-vertical"
+          >
+            <circle cx="12" cy="12" r="1"></circle>
+            <circle cx="12" cy="5" r="1"></circle>
+            <circle cx="12" cy="19" r="1"></circle>
           </svg>
-        </a>
-  
-        <!-- Dropdown -->
-        <div class="relative">
-          <button id="dropdownButton" class="text-gray-500 hover:text-gray-700 focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
-              <circle cx="12" cy="12" r="1"></circle>
-              <circle cx="12" cy="5" r="1"></circle>
-              <circle cx="12" cy="19" r="1"></circle>
-            </svg>
-          </button>
-          
-          <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-40 bg-white border rounded-lg shadow-md">
-            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Action</a>
-            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Another action</a>
-            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Something else here</a>
-          </div>
+        </button>
+
+        <div
+          id="dropdownMenu"
+          class="hidden absolute right-0 mt-2 w-40 bg-white border rounded-lg shadow-md"
+        >
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+            >Action</a
+          >
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+            >Another action</a
+          >
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+            >Something else here</a
+          >
         </div>
       </div>
     </div>
-  
-    <!-- Body -->
-    <div class="p-4">
-      <div id="world_map" class="h-[350px] bg-transparent flex items-center justify-center">
-        <div id="map" style="height: 40vh;"></div>
-      </div>
+  </div>
+
+  <!-- Body -->
+  <div class="p-4">
+    <div
+      id="world_map"
+      class="h-[350px] bg-transparent flex items-center justify-center"
+    >
+      <div id="map" style="height: 40vh"></div>
     </div>
   </div>
-  
+</div>
